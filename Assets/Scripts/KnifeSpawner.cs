@@ -7,6 +7,7 @@ public class KnifeSpawner : MonoBehaviour
     
     private int totalKnives;
     private Sprite currentLevelKnifeSprite;
+    private GameObject currentKnifeObject;
 
     void Start()
     {
@@ -17,29 +18,46 @@ public class KnifeSpawner : MonoBehaviour
             currentLevelKnifeSprite = GameManager.instance.currentLevelData.knifeSprite;
             
             GameUI.instance.SetInitialKnives(knivesRemaining);
+            SpawnPassiveKnife();
         }
     }
 
     void Update()
     {
-        if (knivesRemaining > 0 && Input.GetMouseButtonDown(0))
+        if (knivesRemaining > 0 && Input.GetMouseButtonDown(0) && currentKnifeObject != null)
         {
-            SpawnKnife();
+            ThrowCurrentKnife();
         }
     }
 
-    void SpawnKnife()
+    void SpawnPassiveKnife()
+    {
+        currentKnifeObject = Instantiate(knifePrefab, transform.position, Quaternion.identity);
+        
+        if (currentLevelKnifeSprite != null)
+        {
+            currentKnifeObject.GetComponent<SpriteRenderer>().sprite = currentLevelKnifeSprite;
+        }
+
+        currentKnifeObject.GetComponent<Knife>().enabled = false;
+        currentKnifeObject.GetComponent<BoxCollider2D>().enabled = false;
+    }
+
+    void ThrowCurrentKnife()
     {
         knivesRemaining--;
 
         int uiIndex = totalKnives - 1 - knivesRemaining;
         GameUI.instance.DecreaseKnifeIndex(uiIndex);
+
+        currentKnifeObject.GetComponent<Knife>().enabled = true;
+        currentKnifeObject.GetComponent<BoxCollider2D>().enabled = true;
         
-        GameObject newKnife = Instantiate(knifePrefab, transform.position, Quaternion.identity);
-        
-        if (currentLevelKnifeSprite != null)
+        currentKnifeObject = null;
+
+        if (knivesRemaining > 0)
         {
-            newKnife.GetComponent<SpriteRenderer>().sprite = currentLevelKnifeSprite;
+            Invoke("SpawnPassiveKnife", 0.1f);
         }
     }
 }
