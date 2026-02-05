@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 426c7f2bb7423e942b8c7e0e5bef6446
+guid: 31f6cf54184091d4a85e5ea5a4c0bb20
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4178046375966092550
-    second: 4_0
+      213: -4803348229867731167
+    second: woodenlog_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 4_0
+      name: woodenlog_0
       rect:
         serializedVersion: 2
-        x: 1796
-        y: 210
-        width: 502
-        height: 3687
+        x: 86
+        y: 57
+        width: 845
+        height: 856
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af2de6115f89406c0800000000000000
-      internalID: -4178046375966092550
+      spriteID: 1278b32fb34175db0800000000000000
+      internalID: -4803348229867731167
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      4_0: -4178046375966092550
+      woodenlog_0: -4803348229867731167
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

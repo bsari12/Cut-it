@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 426c7f2bb7423e942b8c7e0e5bef6446
+guid: fb0f3793d442d4143b0e45df3096bf62
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4178046375966092550
-    second: 4_0
+      213: -2298520373060531713
+    second: knifeblackicon_0
+  - first:
+      213: 242798814993194757
+    second: knifeblackicon_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 4_0
+      name: knifeblackicon_0
       rect:
         serializedVersion: 2
-        x: 1796
-        y: 210
-        width: 502
-        height: 3687
+        x: 22
+        y: 0
+        width: 216
+        height: 221
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +144,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af2de6115f89406c0800000000000000
-      internalID: -4178046375966092550
+      spriteID: ff98ab616e30a10e0800000000000000
+      internalID: -2298520373060531713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knifeblackicon_1
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 160
+        width: 283
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f1e8f5c389e5300800000000000000
+      internalID: 242798814993194757
       vertices: []
       indices: 
       edges: []
@@ -161,7 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      4_0: -4178046375966092550
+      knifeblackicon_0: -2298520373060531713
+      knifeblackicon_1: 242798814993194757
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

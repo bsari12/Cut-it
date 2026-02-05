@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 426c7f2bb7423e942b8c7e0e5bef6446
+guid: 48e0623ab0699a5409bc5fa0a5c95a8e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4178046375966092550
-    second: 4_0
+      213: -293136964713840438
+    second: kante_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 512
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 4_0
+      name: kante_0
       rect:
         serializedVersion: 2
-        x: 1796
-        y: 210
-        width: 502
-        height: 3687
+        x: 0
+        y: 0
+        width: 201
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af2de6115f89406c0800000000000000
-      internalID: -4178046375966092550
+      spriteID: ac002b3db719eebf0800000000000000
+      internalID: -293136964713840438
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      4_0: -4178046375966092550
+      kante_0: -293136964713840438
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
